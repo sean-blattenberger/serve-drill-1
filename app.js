@@ -5,6 +5,8 @@ const cohorts = require("./cohorts");
 const app = express();
 
 app.get("/", (req, res) => {
+  console.log('cohorts', cohorts);
+
   res.json(cohorts);
 });
 
