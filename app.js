@@ -9,7 +9,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/:id", (req, res) => {
-  let record = findById(cohorts, req.params.id);
+  console.log(req.params.id);
+
+  let record = findById(cohorts.data, req.params.id);
   if (!record) {
     res.status = 404;
     res.json({
@@ -23,8 +25,10 @@ app.get("/:id", (req, res) => {
 app.listen(PORT);
 
 function findById(data, id) {
+  console.log(data);
+
   for (let i = 0; i < data.length; i++) {
-    if (data[i].ID == id) {
+    if (data[i].id == id) {
       return data[i];
     }
   }
