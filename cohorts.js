@@ -8,19 +8,19 @@ module.exports = {
         "numberOfStudents": 28
       },
       {
-        "ID": 2,
+        "id": 2,
         "cohortName": "17-01-DS-GT",
         "cohortCode": "g105",
         "numberOfStudents": 24
       },
       {
-        "ID": 3,
+        "id": 3,
         "cohortName": "17-02-WD-PX",
         "cohortCode": "g109",
         "numberOfStudents": 30
       },
       {
-        "ID": 4,
+        "id": 4,
         "cohortName": "17-03-WD-BD",
         "cohortCode": "g110",
         "numberOfStudents": 29

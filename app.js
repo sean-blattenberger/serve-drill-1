@@ -11,13 +11,14 @@ app.get("/", (req, res) => {
 app.get("/:id", (req, res) => {
   let record = findById(cohorts.data, req.params.id);
   if (!record) {
-    res.status(404).send({
+    res.status(404).json({
       error: {
         message: "Record not found"
       }
     });
+  } else {
+    res.json(record);
   }
-  res.json(record);
 });
 app.listen(PORT);
 
